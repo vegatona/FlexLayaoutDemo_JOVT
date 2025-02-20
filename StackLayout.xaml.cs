@@ -1,13 +1,14 @@
 namespace FlexLayaoutDemo_JOVT;
 
-public partial class FlexLayaout : ContentPage
+public partial class StackLayout : ContentPage
 {
-	public FlexLayaout()
+	public StackLayout()
 	{
 		InitializeComponent();
 	}
+
     private void next_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new StackLayout());
+		Navigation.PushAsync(new AbsoluteLayout());
     }
 }

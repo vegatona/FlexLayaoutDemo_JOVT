@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexLayaoutDemo_JOVT.StackLayout"
+             Title="StackLayout">
+
+    <StackLayout>
+        <!-- Header/cabecera -->
+        <Label Text="Header"/>
+        <BoxView Color="Yellow"
+            HeightRequest="40"
+            />
+        <!-- Body/contenido -->
+        <Label Text="content" />
+        <BoxView Color="Green"
+            HeightRequest="40"
+            />
+        <BoxView Color="Orange"
+            HeightRequest="40"
+            />
+        <!-- Footer/pie de pagina -->
+        <Label Text="Footer" />
+        <BoxView Color="Blue"
+            HeightRequest="40"
+            />
+
+        <!-- Boton -->
+        <Label Text="Ir a Absolutelayout"/>
+        <Button 
+            Text="siguiente"
+            x:Name="next"
+            Clicked="next_Clicked"
+            />
+    </StackLayout>
+    
+</ContentPage>

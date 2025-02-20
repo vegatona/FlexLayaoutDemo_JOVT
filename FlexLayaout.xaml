@@ -5,14 +5,14 @@
              Title="FlexLayaout">
     <FlexLayout Direction="Column">
         
-        <!-- Header-cabecera -->
+        <!-- Header/cabecera -->
         <Label
             Text="Header"
             FontSize="18"
             BackgroundColor="Red"
             HorizontalTextAlignment="Center"
             />
-        <!-- Body -->
+        <!-- Body/contenido -->
         <FlexLayout FlexLayout.Grow="1">
             <!-- contenido -->
             <Label
@@ -40,6 +40,13 @@
             FontSize="18"
             BackgroundColor="Pink"
             HorizontalTextAlignment="Center"
+            />
+        <!-- boton -->
+        <Label Text="Ir a stacklayout"/>
+        <Button 
+            Text="siguiente"
+            x:Name="next"
+            Clicked="next_Clicked"
             />
     </FlexLayout>
 </ContentPage>

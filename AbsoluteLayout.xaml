@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexLayaoutDemo_JOVT.AbsoluteLayout"
+             Title="AbsoluteLayout">
+    <AbsoluteLayout>
+        <!-- Header/cabecera -->
+        <BoxView Color="Red"
+            AbsoluteLayout.LayoutBounds="0, 10, 200, 5"
+            />
+
+        <!-- Body/contenido -->
+        <BoxView Color="Orange"
+                 AbsoluteLayout.LayoutBounds="0, 20, 200, 5"
+                 />
+        <BoxView Color="Pink"
+                 AbsoluteLayout.LayoutBounds="20, 0, 5, 65"
+                 />
+
+        <!-- Footer/pie de pagina -->
+        <BoxView Color="Yellow"
+                 AbsoluteLayout.LayoutBounds="10, 0, 5, 65"
+                 />
+        <!-- Boton -->
+        
+        <Label Text="Ir a grid"
+               AbsoluteLayout.LayoutBounds="5,450,100, 100"
+               />
+        <Button 
+            Text="siguiente"
+            x:Name="next"
+            Clicked="next_Clicked"
+           AbsoluteLayout.LayoutBounds="5,500,100, 100"
+            />
+    </AbsoluteLayout>
+</ContentPage>
